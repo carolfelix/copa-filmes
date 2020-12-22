@@ -7,7 +7,14 @@ O projeto tem como objetivo fazer uma competição entre uma lista de 16 filmes,
 *Frontend* denvolvido com react.js, html e css.
 
 ## Rodando o projeto na sua máquina 
-Após clonar o projeto, é necessário rodar o backend, fazendo a busca dos filmes na API, via axios.
+
+Ao clonar o projeto, acesse a pasta src - copa-filmes-web-api e digite o **dotnet publish** que irá compilar o aplicativo, resolvendo as dependencias e publica o conjunto de arquivos resultantes em um diretório. Após isso digite o comando **dotnet build**, para realizar o build, e logo em seguida **dotnet run** para inicializar o projeto.
+
+Feito isso, acesse a pasta src-copa-filmes-web e digite **npm install** para que instale e resolva todas as dependências utilizadas no projeto. E para finalizar
+digite o comando **npm start** e abrirá o projeto no navegador.
+
+É necessário rodar o backend primeiro para acessar o frontend.
+
 
 ## Realizando campeonato
 Para realizar o campeonato é nececessário selecionar 8 filmes e clicar no botão **Gerar meu campeonato**, assim retornará a tela de resultados com campeão
