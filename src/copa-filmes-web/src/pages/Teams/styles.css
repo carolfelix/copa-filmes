@@ -1,0 +1,128 @@
+.actions{
+	display: flex;
+	height: auto;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.actions .count {
+	color:#050000;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.actions button{
+	height: 35px;
+	padding: 10px;
+	font-size: 11px;
+	color:#ffffff;
+	font-weight: bold;
+	box-shadow: 0 2px 0 2px rgba(0, 0, 0, 0.05);
+	border: 0;
+	text-transform: uppercase;
+	border-radius: 2px;
+	background: #650505;
+	cursor: pointer;
+	transition: all 0.3s;
+
+}
+.actions button:hover{
+	transform:scale(1.1);
+}
+
+.btn-disabled {
+	opacity: 0.3;
+	pointer-events: none; 
+}
+
+.container-movies{
+	height: auto;
+	margin-top: 30px;
+}
+
+.list-movies{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.movies-item{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border:1px solid  rgb(243, 220, 220);
+	background-color: #650505;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.container-check {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+}
+
+.container-check input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	border: 1px solid rgb(241, 222, 222);
+	transition: all 0.3s;
+  }
+
+.checkmark:hover{
+	transform:scale(1.1);
+}
+.container-check input:checked ~ .checkmark {
+	background-color: #63170d;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+
+  .container-check input:checked ~ .checkmark:after {
+	display: block;
+  }
+
+  .container-check .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+  }
+
+.info-movie{
+	display: flex;
+	width: 100%;
+	margin-left: 8px;
+	flex-direction: column;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+
+
+}
+
+.info-movie p{
+	margin-bottom: 5px;
+}
